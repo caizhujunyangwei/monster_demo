@@ -535,6 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162ff18ccd9b6af48845fee21ad0eb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IgnoreHitAnimation: 0.15
 --- !u!114 &1023471537152261435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +558,7 @@ MonoBehaviour:
     AttackBullet: {fileID: 2486384487848459669, guid: 309326b6d5a7642439a011a68e84f923, type: 3}
     HitParticle: {fileID: 0}
     HitParticleLifeTime: 0
+    HitCicrle: 0
     SkillTime: 0
   Attack_Power: 1
   CriticalAttack_Weight: 0.1
@@ -581,6 +583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 70}
+  UI: {fileID: 8684732336495694177, guid: da4b7ff89a2d8b2468ecff57e00a844d, type: 3}
 --- !u!1 &1023471537743967466
 GameObject:
   m_ObjectHideFlags: 0

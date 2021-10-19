@@ -9,9 +9,10 @@ public class HpBehaivor : MonoBehaviour
     [Tooltip("血条调整")]
     public Vector2 offset;
 
+
     GameObject UIObject;
 
-    RectTransform transform;
+    RectTransform _hptransform;
 
     Slider slider;
 
@@ -25,7 +26,7 @@ public class HpBehaivor : MonoBehaviour
 
         slider = UIObject.transform.Find("HpSlider").gameObject.GetComponent<Slider>();
 
-        transform = slider.gameObject.GetComponent<RectTransform>();
+        _hptransform = slider.gameObject.GetComponent<RectTransform>();
 
     }
 
@@ -39,6 +40,6 @@ public class HpBehaivor : MonoBehaviour
             return;
         }
         slider.value = Behaivor.GetHpPercent();
-        transform.transform.position = offset + RectTransformUtility.WorldToScreenPoint(Camera.main, gameObject.transform.position);
+        _hptransform.transform.position = offset + RectTransformUtility.WorldToScreenPoint(Camera.main, gameObject.transform.position);
     }
 }

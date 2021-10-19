@@ -21,17 +21,17 @@ public class UIUtils : MonoBehaviour
 
     public void OnSelectRole(GameObject InObj)
     {
-        this.SelectsObjects[0] = InObj;
-        this.ShowSelectSelfMonsterUI();
-        SelectMonsterIndex = 1;
+        //this.SelectsObjects[0] = InObj;
+        //this.ShowSelectSelfMonsterUI();
+        //SelectMonsterIndex = 1;
 
-        //ATController AT = GameObject.Find("ATController").GetComponent<ATController>();
+        ATController AT = GameObject.Find("ATController").GetComponent<ATController>();
 
-        //GameObject[] Objs = new GameObject[1];
-        //Objs[0] = InObj;
-        //AT.SetPlayerCheckObject(Objs);
+        GameObject[] Objs = new GameObject[1];
+        Objs[0] = InObj;
+        AT.SetPlayerCheckObject(Objs);
 
-        //AT.StartLevel(1);
+        AT.StartLevel(1);
     }
 
 
